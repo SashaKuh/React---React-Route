@@ -8,7 +8,7 @@ const Movies = () => {
 
   return (
     <MoviesWrapper>
-      <GetBackButton to={location?.state?.from ?? '/goit-react-hw-05-movies'}>
+      <GetBackButton to={location?.state?.from ?? '/'}>
         <AiOutlineArrowLeft />
       </GetBackButton>
       <Search />

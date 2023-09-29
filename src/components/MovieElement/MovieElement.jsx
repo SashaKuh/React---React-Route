@@ -6,7 +6,7 @@ export const MovieElement = ({ id, poster, name }) => {
   return (
     <ListMovieEl>
       <Link
-        to={'/goit-react-hw-05-movies/movies/' + id}
+        to={'/movies/' + id}
         state={{ from: location }}
       >
         <img

@@ -48,10 +48,9 @@ const MovieDetails = () => {
 
   return (
     <MovieDetailsWrapper>
-        <GetBackButton to={location?.state?.from ?? '/goit-react-hw-05-movies'}>
-        <AiOutlineArrowLeft />
-    </GetBackButton>
-
+        <GetBackButton to={'/'}>
+          <AiOutlineArrowLeft />
+        </GetBackButton>
       <MovieDetailsSection>
         <img
           width="300px"
@@ -75,13 +74,13 @@ const MovieDetails = () => {
       <SectionAdditional>
         <MovieAdditionalTitle>Additional information</MovieAdditionalTitle>
         <Link
-          to={`/goit-react-hw-05-movies/movies/${movieId}/cast`}
+          to={`/movies/${movieId}/cast`}
           state={{ from: location }}
         >
           Cast
         </Link>
         <Link
-          to={`/goit-react-hw-05-movies/movies/${movieId}/reviews`}
+          to={`/movies/${movieId}/reviews`}
           state={{ from: location }}
         >
           Reviews

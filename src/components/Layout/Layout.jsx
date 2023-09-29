@@ -13,11 +13,11 @@ export const Layout = () => {
     <>
       <HeaderStyled>
         <HeaderContainer>
-          <HomeLink to="/goit-react-hw-05-movies" state={{ from: location }}>
+          <HomeLink to="/" state={{ from: location }}>
             MovieHub
           </HomeLink>
           <SearchLink
-            to="/goit-react-hw-05-movies/movies"
+            to="/movies"
             state={{ from: location }}
           >
             Search
