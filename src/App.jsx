@@ -1,9 +1,9 @@
 import { Suspense, lazy } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { Layout } from 'components/Layout/Layout.jsx';
-import { Loader } from 'components/Loader/Loader.jsx';
+import { Layout } from './components/Layout/Layout';
+import { Loader } from 'components/Loader/Loader';
 
-const Home = lazy(() => import('./page/Home/Home'));
+const Home = lazy(() => import('./page/Home/Home.jsx'));
 const MovieDetails = lazy(() => import('./page/MovieDetails/MovieDetails'));
 const Movies = lazy(() => import('./page/Movies/Movies'));
 const Cast = lazy(() => import('components/Cast/Cast'));

@@ -48,9 +48,9 @@ const MovieDetails = () => {
 
   return (
     <MovieDetailsWrapper>
-        <GetBackButton to={'/'}>
-          <AiOutlineArrowLeft />
-        </GetBackButton>
+      <GetBackButton to={location?.state?.from ?? '/'}>
+        <AiOutlineArrowLeft />
+      </GetBackButton>
       <MovieDetailsSection>
         <img
           width="300px"
@@ -75,13 +75,13 @@ const MovieDetails = () => {
         <MovieAdditionalTitle>Additional information</MovieAdditionalTitle>
         <Link
           to={`/movies/${movieId}/cast`}
-          state={{ from: location }}
+          state={{ from: location.state.from }}
         >
           Cast
         </Link>
         <Link
           to={`/movies/${movieId}/reviews`}
-          state={{ from: location }}
+          state={{ from: location.state.from }}
         >
           Reviews
         </Link>

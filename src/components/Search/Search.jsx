@@ -16,11 +16,7 @@ export const Search = () => {
   const [searchParams, setSearchParams] = useSearchParams();
 
   const [query, setQuery] = useState('');
-    const [movies, setMovies] = useState([]);
-    
-    const iconStyle = {
-  color: 'black', 
-}
+  const [movies, setMovies] = useState([]);
 
   useEffect(() => {
     if (!searchParams) return;
@@ -59,7 +55,7 @@ export const Search = () => {
             value={query}
           />
           <SearchButton type="submit">
-            <FaMagnifyingGlass style={iconStyle} />
+            <FaMagnifyingGlass />
           </SearchButton>
         </SearchForm>
       </SearchWrapper>
